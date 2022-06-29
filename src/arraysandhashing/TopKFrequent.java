@@ -20,7 +20,7 @@ public class TopKFrequent {
         }
 
         int[] top = new int[k];
-        for (int i = 0; i < k - 1; i++) top[i] = heap.poll();
+        for (int i = 0; i <= k - 1; i++) top[i] = heap.poll();
 
         return top;
     }
